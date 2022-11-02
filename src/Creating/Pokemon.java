@@ -16,9 +16,9 @@ public class Pokemon {
 	String golpe2;
 	String golpe3;
 
-	public int valorAtaque(int ataque) {
+	public int valorAtaque() {
 		Random rand = new Random();
-		int upperbound = ataque;
+		int upperbound = 100;
 		int ataques = rand.nextInt(upperbound);
 		return ataques;
 	}
@@ -28,9 +28,11 @@ public class Pokemon {
 		int defesa = rand.nextInt(upperbound);
 		return defesa;
 	}
-	public void restaurarVida() {
-		saude = 100;
-		System.out.println("Vida restaurada: "+ saude);
+	public int restaurarVida() {
+		Random rand = new Random();
+		int upperbound = 80;
+		int vida = rand.nextInt(upperbound);
+		return vida;
 	}
 	
 	public Integer getNumero() {
