@@ -15,6 +15,7 @@ public class Board {
 		}
 		int want = sc.nextInt();
 		if (want == 1) {
+			System.out.println(player.Name.toUpperCase() + " Escolhe um ataque!\n " +" 1) "+ a.golpe1 + " 2) "+ a.golpe2 + " 3) " + a.golpe3 );
 			String nameAtack = "";
 			int ataque = sc.nextInt();
 			int atackValue = 0;
